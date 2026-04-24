@@ -1,0 +1,39 @@
+============================================================
+ESTRUCTURA VISUAL - PROYECTO "EL FARO" (VERSIÓN BOOTSTRAP)
+============================================================
+
+TOP BAR (Avisos)
+ └─ Banner de alerta: Suscripciones / Noticias de último minuto
+
+HEADER (Encabezado)
+ ├─ Lado Izquierdo: Logo SVG "El Faro" + Título H1
+ └─ Lado Derecho: Widget Dinámico (Fecha actual y Reloj en tiempo real)
+
+NAV (Navegación Principal)
+ └─ Navbar Sticky (Fija al hacer scroll): 
+    Inicio | Deportes | Negocios | [Botón Login]
+
+MAIN (Contenido Principal - Sistema de Grillas)
+ │
+ ├─ SECCIÓN DESTACADA (Hero Section)
+ │   └─ Card de ancho completo con imagen de fondo (Overlay) + Título H2 + Botón
+ │
+ ├─ SECCIÓN DE NOTICIAS (Grilla Dinámica)
+ │   └─ Contenedor Row: 3 Columnas (col-md-4)
+ │       └─ Card 1: Imagen + Título + Categoría + Descripción
+ │       └─ Card 2: Imagen + Título + Categoría + Descripción
+ │       └─ Card 3: Imagen + Título + Categoría + Descripción
+ │
+ ├─ SECCIÓN MULTIMEDIA (Dos Columnas)
+ │   ├─ Columna 8/12: Video Responsivo (YouTube Embed)
+ │   └─ Columna 4/12: Reproductor de Audio Ambiental + Control de Silencio
+ │
+ └─ SECCIÓN DE INTERACCIÓN (Formulario)
+     └─ Formulario de Envío: Título | Categoría (Select) | Contenido (Textarea) | Botón
+
+FOOTER (Pie de página - Tamaño Extendido)
+ ├─ Columna 1: Branding "El Faro" y descripción breve
+ ├─ Columna 2: Enlaces rápidos de navegación
+ ├─ Columna 3: Información Legal y Privacidad
+ ├─ Columna 4: Badges de Redes Sociales (FB, TW, IG)
+ └─ Créditos: © 2026 El Faro - Todos los derechos reservados
