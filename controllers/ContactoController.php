@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt = $conexion->prepare($sql);
         $stmt->execute([':nom' => $nombre, ':em' => $email, ':msj' => $mensaje]);
         
-        // CAMBIO: Cambiamos contacto.php por index.php para volver al inicio
+    
         echo "<script>
                 alert('Mensaje enviado. ¡Gracias por contactar a El Faro!'); 
                 window.location.href='../views/index.php';

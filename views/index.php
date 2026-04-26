@@ -6,7 +6,7 @@
     <title>El Faro - Modernizado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <style>
         .noticia { transition: 0.3s; }
         .noticia:hover { background-color: #000 !important; color: #fff !important; }
@@ -49,17 +49,68 @@
         </div>
     </section>
 
-    <h3 class="mb-4 text-primary"><i class="bi bi-newspaper"></i> Noticias Destacadas</h3>
+    <h3 class="mb-4 text-primary"><i class="bi bi-newspaper"></i> Otras Noticias</h3>
     <div class="row">
         <div class="col-md-4 mb-4">
             <div class="card h-100 shadow-sm noticia">
                 <div class="card-body">
                     <h5>🌌 Arqueología espacial desde Atacama</h5>
-                    <p>Un equipo internacional logró reconstruir la historia de la galaxia NGC 1365...</p>
+                    <p class="small text-muted mb-2"><strong>Categoría:</strong> Ciencia</p>
+                    <p>Un equipo internacional logró reconstruir la historia de la galaxia NGC 1365 utilizando arqueología química desde el Observatorio Las Campanas.</p>
                 </div>
             </div>
         </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm noticia">
+                <div class="card-body">
+                    <h5>💉 Espuma inteligente que salva vidas</h5>
+                    <p class="small text-muted mb-2"><strong>Categoría:</strong> Salud</p>
+                    <p>La innovadora tecnología ResQFoam permite detener hemorragias internas en segundos, representando un cambio en la medicina de emergencia.</p>
+                </div>
+            </div>
         </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm noticia">
+                <div class="card-body">
+                    <h5>🎤 Nuevo soundtrack de Michael Jackson</h5>
+                    <p class="small text-muted mb-2"><strong>Categoría:</strong> Espectáculos</p>
+                    <p>Se lanzará el álbum "Michael: Songs from the Motion Picture", con 13 canciones que recorren la carrera del artista, disponible desde el 24 de abril.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm noticia">
+                <div class="card-body">
+                    <h5>🏔️ Nevadas intensas en la cordillera</h5>
+                    <p class="small text-muted mb-2"><strong>Categoría:</strong> Clima</p>
+                    <p>Fuertes nevadas afectan la zona cordillerana del país, generando cortes de rutas y aumento en el nivel de los ríos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm noticia">
+                <div class="card-body">
+                    <h5>⚽ Final del campeonato nacional</h5>
+                    <p class="small text-muted mb-2"><strong>Categoría:</strong> Deportes</p>
+                    <p>Un emocionante cierre de temporada definirá al nuevo campeón del fútbol nacional, con estadios llenos para la última fecha.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm noticia">
+                <div class="card-body">
+                    <h5>🎭 Festival cultural en Santiago</h5>
+                    <p class="small text-muted mb-2"><strong>Categoría:</strong> Cultura</p>
+                    <p>La capital se llena de actividades culturales con música, teatro y danza en espacios públicos, promoviendo el arte local.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="mt-5" id="contacto">
         <h3 class="text-primary mb-3"><i class="bi bi-envelope-fill"></i> Contáctanos</h3>
@@ -118,7 +169,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="JavaScrip.js"></script>
+<script src="./JavaScrip.js"></script>
 <script>
     const formCon = document.getElementById('formContacto');
     if(formCon) {
