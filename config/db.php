@@ -1,17 +1,21 @@
 <?php
-$host = "localhost";
-$port = "3307"; 
-$db   = "elfaro_db";
-$user = "root";
-$pass = ""; 
+class Database {
+    private $host = 'localhost';
+    private $db_name = 'elfaro_db';
+    private $username = 'root';
+    private $password = '';
+    private $port = '3307';
+    public $conn;
 
-try {
-    $conexion = new PDO("mysql:host=$host;port=$port;dbname=$db", $user, $pass);
-
-    $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-   // echo "¡Conectado exitosamente al puerto 3307 de Laragon!";
-} catch (PDOException $e) {
-    echo "Error de conexión: " . $e->getMessage();
+    public function connect() {
+        $this->conn = null;
+        try {
+            $this->conn = new PDO("mysql:host=" . $this->host . ";port=" . $this->port . ";dbname=" . $this->db_name, $this->username, $this->password);
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch(PDOException $e) {
+            echo "Error de conexión: " . $e->getMessage();
+        }
+        return $this->conn;
+    }
 }
 ?>
