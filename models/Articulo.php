@@ -1,5 +1,9 @@
 <?php
-// Usamos la ruta absoluta para no fallar
+require_once 'Conexion.php';
+
+class Articulo extends Conexion { 
+    
+}
 require_once __DIR__ . '/../config/db.php';
 
 class Articulo {

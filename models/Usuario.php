@@ -1,5 +1,7 @@
 <?php
-class Usuario {
+require_once 'Conexion.php';
+
+class Usuario extends Conexion {
     private $db;
 
     public function __construct($conexion) {
