@@ -8,7 +8,7 @@ class Conexion {
     public function __construct() {
         try {
             // Establecemos la conexión usando las constantes de db.php
-            $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET;
+            $dsn = "mysql:host=" . DB_HOST . ";port=" . DB_PORT . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET;
             $this->db = new PDO($dsn, DB_USER, DB_PASS);
             
             // Configuramos PDO para que lance excepciones en caso de error

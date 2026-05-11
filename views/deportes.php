@@ -1,6 +1,7 @@
-<?php 
-require_once '../controllers/ArticuloController.php'; 
+<?php
+require_once __DIR__ . '/../controllers/ArticuloController.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
